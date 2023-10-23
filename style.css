@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #243546;
+    padding: 50px 0 50px 200px;
+}
+.container h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+.container .tabs{
+    margin-top: 15px;
+}
+.container .tabs label{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #FF9C0B;
+    cursor: pointer;
+}
+.container .tabs label:nth-child(2){
+    margin: 0 4px;
+}
+.container .wrapper{
+    width: 50%;
+    background-color: #fff;
+    padding: 15px;
+}
+.container input{
+    display: none;
+}
+.container .wrapper .tab-1-content,
+.container .wrapper .tab-2-content,
+.container .wrapper .tab-3-content{
+    display: none;
+}
+#tab-1:checked ~ .wrapper .tab-1-content{
+    display: initial;
+}
+#tab-2:checked ~ .wrapper .tab-2-content{
+    display: initial;
+}
+#tab-3:checked ~ .wrapper .tab-3-content{
+    display: initial;
+}
+#tab-1:checked ~ .tabs label:nth-child(1){
+    background-color: #fff;
+}
+#tab-2:checked ~ .tabs label:nth-child(2){
+    background-color: #fff;
+}
+#tab-3:checked ~ .tabs label:nth-child(3){
+    background-color: #fff;
+}
